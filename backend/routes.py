@@ -48,7 +48,7 @@ def create_friend():
         return jsonify({"error":str(e)}), 500
     
     # delete a friend
-@app.routes("/api/friends/<int:id>", methods=["DELETE"])
+@app.route("/api/friends/<int:id>", methods=["DELETE"])
 def delete_friend(id):
     try:
         friend = Friend.query.get(id)
