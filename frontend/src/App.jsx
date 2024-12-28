@@ -1,11 +1,14 @@
-import { Button } from "./components/ui/button"
-import { HStack } from "@chakra-ui/react"
+import { Navbar } from "./components/Navbar"
+import { Container, HStack } from "@chakra-ui/react"
+
 
 
 function App() {
   return (
-    <HStack>
-      <Button>jaane</Button>
+    <HStack minH={"100vh"}>
+      <Navbar />
+
+      <Container maxW={"1200px"} my={4}></Container>
     </HStack>
   )
 }
