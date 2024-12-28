@@ -1,11 +1,12 @@
+import { Button } from "./components/ui/button"
+import { HStack } from "@chakra-ui/react"
+
 
 function App() {
-
-
   return (
-    <>
-      <h1>HELLO WORLD...!</h1>
-    </>
+    <HStack>
+      <Button>jaane</Button>
+    </HStack>
   )
 }
 
