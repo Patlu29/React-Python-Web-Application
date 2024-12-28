@@ -1,15 +1,16 @@
 import { Navbar } from "./components/Navbar"
-import { Container, HStack } from "@chakra-ui/react"
+import { Container, Stack } from "@chakra-ui/react"
+
 
 
 
 function App() {
   return (
-    <HStack minH={"100vh"}>
+    <Stack minH={"100vh"}>
       <Navbar />
 
       <Container maxW={"1200px"} my={4}></Container>
-    </HStack>
+    </Stack>
   )
 }
 
