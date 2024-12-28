@@ -5,7 +5,6 @@ from models import Friend
 
 
 # get all friends
-
 @app.route("/api/friends", methods=["GET"])
 def get_friends():
     friends = Friend.query.all()
@@ -47,7 +46,7 @@ def create_friend():
         db.session.rollback()
         return jsonify({"error":str(e)}), 500
     
-    # delete a friend
+# delete a friend
 @app.route("/api/friends/<int:id>", methods=["DELETE"])
 def delete_friend(id):
     try:
@@ -62,7 +61,8 @@ def delete_friend(id):
     except Exception as e:
         db.session.rollback()
         return jsonify({"error":str(e)}), 500
-    
+
+# update a friend
 @app.route("/api/friends/<int:id>", methods=["PATCH"])
 def update_friend(id):
     try:

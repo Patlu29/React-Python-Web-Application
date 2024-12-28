@@ -1,5 +1,6 @@
 from app import db
 
+# structure of a data in database
 class Friend(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
@@ -8,7 +9,8 @@ class Friend(db.Model):
     gender = db.Column(db.String(10), nullable=False)
     img_url = db.Column(db.String(200), nullable=True)
     
-    
+
+    # convert a data into json
     def to_json(self):
         return {
             "id":self.id,
