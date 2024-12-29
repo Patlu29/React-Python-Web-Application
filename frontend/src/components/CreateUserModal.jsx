@@ -56,9 +56,9 @@ function CreateUserModal() {
             />
             <RadioGroup defaultValue="1">
               <HStack gap="6">
-                <Radio value="1">Option 1</Radio>
-                <Radio value="2">Option 2</Radio>
-                <Radio value="3">Option 3</Radio>
+                <Radio value="1">Male</Radio>
+                <Radio value="2">Female</Radio>
+                <Radio value="3">Others</Radio>
               </HStack>
             </RadioGroup>
           </Stack>
@@ -67,7 +67,7 @@ function CreateUserModal() {
           <DrawerActionTrigger asChild>
             <Button variant="outline">Cancel</Button>
           </DrawerActionTrigger>
-          <Button>Save</Button>
+          <Button>Add</Button>
         </DrawerFooter>
         <DrawerCloseTrigger />
       </DrawerContent>
