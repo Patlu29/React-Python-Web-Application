@@ -1,10 +1,9 @@
 import {
-  Flex,
   Input,
-  RadioCardItem,
-  RadioGroup,
   Stack,
 } from "@chakra-ui/react";
+import { HStack } from "@chakra-ui/react"
+import { Radio, RadioGroup } from "./ui/radio"
 import { BiAddToQueue } from "react-icons/bi";
 import { Button } from "./ui/button";
 import {
@@ -39,7 +38,7 @@ function CreateUserModal() {
       </DrawerTrigger>
       <DrawerContent
         width="550px"
-        height="350px"
+        height="400px"
         style={{ top: "40%", left: "50%", transform: "translate(-50%, -50%)" }}
       >
         <DrawerHeader>
@@ -55,11 +54,12 @@ function CreateUserModal() {
               placeholder="Description"
               height="80px"
             />
-            <RadioGroup defaultValue="male" mt={4}>
-              <Flex gap={5}>
-                <RadioCardItem value="male">Male</RadioCardItem>
-                <RadioCardItem value="female">Female</RadioCardItem>
-              </Flex>
+            <RadioGroup defaultValue="1">
+              <HStack gap="6">
+                <Radio value="1">Option 1</Radio>
+                <Radio value="2">Option 2</Radio>
+                <Radio value="3">Option 3</Radio>
+              </HStack>
             </RadioGroup>
           </Stack>
         </DrawerBody>
