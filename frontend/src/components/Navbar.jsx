@@ -1,6 +1,6 @@
 import { Box, Container, Flex, Text } from "@chakra-ui/react"
 import { ColorModeButton } from "./ui/color-mode"
-import CreateUserModel from "./CreateUserModel"
+import CreateUserModal from "./CreateUserModal"
 
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ return (
                         BFFship ✨
                     </Text>
                     <ColorModeButton borderRadius={50} border="2px solid rgb(0, 128, 128)"/>
-                    <CreateUserModel />
+                    <CreateUserModal />
                 </Flex>
             </Flex>
         </Box>
